@@ -15,7 +15,8 @@ $("#update_user").submit(function(event){
 
 
     let request = {
-        "url" : `http://localhost:3000/api/users/${data.id}`,
+        // "url" : `http://localhost:3000/api/users/${data.id}`,
+        "url" : `https://yatin-crud-app.herokuapp.com/users/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -32,7 +33,8 @@ if(window.location.pathname == "/"){
         let id = $(this).attr("data-id")
 
         let request = {
-            "url" : `http://localhost:3000/api/users/${id}`,
+            // "url" : `http://localhost:3000/api/users/${id}`,
+            "url": `https://yatin-crud-app.herokuapp.com/users/${id}`,
             "method" : "DELETE"
         }
 
